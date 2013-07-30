@@ -21,3 +21,9 @@ local.properties
 
 # API keys
 GooglePlayDeveloper.java
+
+# Misc trash files
+Thumbs.db
+hs*.log
+*.iml
+.settings
