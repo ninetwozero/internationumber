@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <CheckBoxPreference
+        android:defaultValue="false"
+        android:key="run_service"
+        android:summaryOff="Automatic number conversion is OFF."
+        android:summaryOn="Automatic number conversion is ON."
+        android:title="Automatically convert numbers" />
+
+    <com.ninetwozero.internationumber.preference.CountryListPreference
+        android:dependency="run_service"
+        android:key="selected_country"
+        android:summary="Select country to target for conversion."
+        android:title="Target country" />
+
+    <CheckBoxPreference
+        android:defaultValue="true"
+        android:dependency="run_service"
+        android:key="should_notify"
+        android:summaryOff="You won&apos;t see a thing."
+        android:summaryOn="You will be notified upon completion."
+        android:title="Notifications upon completion" />
+
+</PreferenceScreen>
