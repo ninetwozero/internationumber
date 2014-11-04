@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="?listPreferredItemHeightLarge"
+  android:padding="@dimen/spacing_l"
+  android:background="?attr/selectableItemBackground"
+  >
+
+  <ImageView
+    android:id="@+id/contact_image"
+    android:layout_width="@dimen/contact_image_size"
+    android:layout_height="@dimen/contact_image_size"
+    android:layout_marginRight="@dimen/spacing_l"
+    android:layout_marginEnd="@dimen/spacing_l"
+    tools:src="@drawable/default_contact_image"
+    android:contentDescription="@string/cdesc_contact_image"
+    android:layout_centerVertical="true"
+    />
+
+  <LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_toEndOf="@id/contact_image"
+    android:layout_toRightOf="@id/contact_image"
+    android:layout_centerVertical="true">
+  <TextView
+    android:id="@+id/contact_name"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/TextAppearance.AppCompat.Title"
+    android:textStyle="bold"
+    tools:text="Random name 1"
+    android:singleLine="true"
+    />
+
+  <TextView
+    android:id="@+id/contact_number"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+    android:singleLine="true"
+    android:text="070-RANDOM-123"
+    />
+  </LinearLayout>
+</RelativeLayout>

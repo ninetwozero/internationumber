@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # built application files
 *.apk
 *.ap_
@@ -26,5 +27,10 @@ Thumbs.db
 hs*.log
 *.iml
 .settings
+=======
+.gradle
+local.properties
+.idea
+>>>>>>> ea305d2... Start work on version 2.0 from scratch
 .DS_Store
 build

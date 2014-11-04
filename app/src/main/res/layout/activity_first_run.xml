@@ -1,0 +1,69 @@
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent"
+  tools:context=".ui.FirstRunActivity"
+  android:gravity="center"
+  android:orientation="vertical"
+  >
+
+  <LinearLayout
+    android:id="@+id/wrap_top"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:elevation="@dimen/spacing_m"
+    android:layout_alignParentTop="true"
+    >
+
+    <TextView
+      android:id="@+id/heading_welcome"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+      android:textColor="#FFFFFF"
+      android:fontFamily="sans-serif-light"
+      android:text="Welcome!"
+      />
+
+    <TextView
+      style="@style/TextAppearance.AppCompat.Subhead"
+      android:id="@+id/instructions_select"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="@dimen/spacing_m"
+      android:text="Please select your country below"
+      android:textColor="#FFFFFF"
+      android:alpha="0"
+      tools:alpha="0.8"
+      />
+  </LinearLayout>
+
+  <TextView
+    android:id="@+id/next_button"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/listPreferredItemHeightSmall"
+    android:text="@android:string/ok"
+    android:gravity="center"
+    android:background="@color/colorPrimary"
+    android:textColor="@android:color/white"
+    android:layout_alignParentBottom="true"
+    android:elevation="@dimen/spacing_m"
+    android:alpha="0"
+    />
+
+  <android.support.v7.widget.RecyclerView
+    android:id="@+id/country_list"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:scrollbars="vertical"
+    android:clipToPadding="false"
+    android:scrollbarStyle="outsideOverlay"
+    android:layout_below="@id/wrap_top"
+    android:layout_above="@id/next_button"
+    />
+</RelativeLayout>

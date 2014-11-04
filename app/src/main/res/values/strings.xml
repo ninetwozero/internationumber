@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Internationumber</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+  <string name="backups">Backups</string>
+  <string name="cdesc_contact_image">Contact image</string>
+  <string name="cdesc_country_arrow">Select country dropdown arrow</string>
+  <string name="label_next">Proceed</string>
+  <string name="action_change_country">Change country</string>
+
+</resources>

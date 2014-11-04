@@ -1,0 +1,35 @@
+<resources>
+  <style name="AppTheme" parent="Theme.AppCompat.Light">
+    <item name="android:textColorPrimary">@color/textColorPrimary</item>
+    <item name="android:windowBackground">@color/windowBackground</item>
+
+    <item name="android:navigationBarColor">@color/colorPrimary</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+    <item name="actionBarStyle">@style/ActionBarStyle</item>
+  </style>
+  <style name="AppTheme.NoActionBar" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="android:textColorPrimary">@android:color/black</item>
+    <item name="android:windowBackground">@color/windowBackground</item>
+
+    <item name="android:navigationBarColor">@color/colorPrimary</item>
+    <item name="colorPrimary">@color/colorPrimary</item>
+    <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+    <item name="colorAccent">@color/colorAccent</item>
+
+    <item name="actionBarStyle">@style/ActionBarStyle</item>
+    <item name="android:windowFullscreen">true</item>
+  </style>
+
+  <!-- Styling required to make the ActionBar title text white -->
+  <style name="ActionBarStyle" parent="Widget.AppCompat.ActionBar">
+    <item name="titleTextStyle">@style/WhiteActionBarTitleText</item>
+    <item name="background">@color/colorPrimary</item>
+  </style>
+  <style name="WhiteActionBarTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+    <item name="android:textColor">#FFFFFF</item>
+  </style>
+
+</resources>

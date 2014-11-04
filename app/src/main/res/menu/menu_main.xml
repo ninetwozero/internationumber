@@ -1,0 +1,26 @@
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:tools="http://schemas.android.com/tools"
+  xmlns:app="http://schemas.android.com/apk/res-auto"
+  tools:context=".MainActivity">
+
+  <item
+    android:id="@+id/action_backups"
+    android:title="@string/backups"
+    android:orderInCategory="000"
+    app:showAsAction="never"
+    />
+
+  <item
+    android:id="@+id/change_country"
+    android:title="@string/action_change_country"
+    android:orderInCategory="100"
+    app:showAsAction="never"
+    />
+
+  <item
+    android:id="@+id/action_settings"
+    android:title="@string/action_settings"
+    android:orderInCategory="200"
+    app:showAsAction="never"/>
+</menu>
