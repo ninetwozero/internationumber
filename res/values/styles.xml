@@ -1,9 +1,0 @@
-<resources xmlns:android="http://schemas.android.com/apk/res/android">
-    <style name="Heading">
-        <item name="android:textColor">@color/blue</item>
-        <item name="android:textSize">22sp</item>
-        <item name="android:fontFamily">sans-serif</item>
-    </style>
-    <color name="blue">#33B5E5</color>
-    <color name="selection_blue">#AA33B5E5</color>
-</resources>
